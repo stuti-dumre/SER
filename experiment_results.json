@@ -1,0 +1,88 @@
+[
+  {
+    "name": "Exp1: Baseline (mean features, original CNN, no augmentation)",
+    "accuracy": 42.71,
+    "f1_score": 41.93,
+    "epochs": 65,
+    "train_time_sec": 84.1,
+    "params": 210696,
+    "per_class": {
+      "angry": 56.1,
+      "calm": 51.9,
+      "disgust": 34.9,
+      "fearful": 40.0,
+      "happy": 36.1,
+      "neutral": 30.5,
+      "sad": 30.3,
+      "surprised": 50.0
+    }
+  },
+  {
+    "name": "Exp2: Enhanced features + tuned CNN (no augmentation)",
+    "accuracy": 42.01,
+    "f1_score": 40.21,
+    "epochs": 68,
+    "train_time_sec": 330.4,
+    "params": 564616,
+    "per_class": {
+      "angry": 57.1,
+      "calm": 52.1,
+      "disgust": 43.5,
+      "fearful": 36.9,
+      "happy": 17.0,
+      "neutral": 20.8,
+      "sad": 27.6,
+      "surprised": 57.1
+    }
+  },
+  {
+    "name": "Exp3: Enhanced features + tuned CNN + augmentation (4x data)",
+    "accuracy": 67.01,
+    "f1_score": 67.12,
+    "epochs": 126,
+    "train_time_sec": 1770.7,
+    "params": 564616,
+    "per_class": {
+      "angry": 81.2,
+      "calm": 61.1,
+      "disgust": 66.2,
+      "fearful": 66.0,
+      "happy": 69.5,
+      "neutral": 60.0,
+      "sad": 59.2,
+      "surprised": 70.2
+    }
+  },
+  {
+    "name": "Exp4: Temporal MFCCs + deep CNN + augmentation (4x data)",
+    "accuracy": 90.71,
+    "f1_score": 90.81,
+    "epochs": 137,
+    "train_time_sec": 311.7,
+    "params": 431432,
+    "per_class": {
+      "angry": 95.0,
+      "calm": 90.6,
+      "disgust": 90.7,
+      "fearful": 92.8,
+      "happy": 92.2,
+      "neutral": 82.6,
+      "sad": 84.1,
+      "surprised": 94.4
+    }
+  },
+  {
+    "name": "Exp5: Temporal + augmentation + 4 classes (calm/happy/sad/angry)",
+    "accuracy": 89.06,
+    "f1_score": 89.34,
+    "epochs": 90,
+    "train_time_sec": 214.7,
+    "params": 430916,
+    "per_class": {
+      "angry": 92.5,
+      "calm": 88.4,
+      "happy": 91.8,
+      "sad": 76.3
+    }
+  }
+]

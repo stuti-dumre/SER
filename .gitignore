@@ -1,0 +1,38 @@
+# Virtual environment
+.venv/
+
+# Dataset (too large for git)
+dataset/
+
+# Model files (too large for git)
+*.keras
+*.pkl
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Reports and presentations
+*.pdf
+*.pptx
+*.docx
+
+# Helper scripts and drafts
+make_*.py
+*.pptx
+*.docx
+MFCC_SLIDE_SCRIPT.md
+PRESENTATION_SCRIPT.md
+FULL_SCRIPT_AND_GUIDE.md
+PROJECT_REPORT.md
+REPORT.md
+tune.py
